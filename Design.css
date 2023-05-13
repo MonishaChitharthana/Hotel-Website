@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.back1{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Images/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 2% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width:50px ;
+    border-radius: 20px;
+    transform: rotate(35deg);
+    
+}
+
+nav p{
+    padding: 10px;
+    color: rgb(212, 181, 55);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+div.honour{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(249, 238, 238);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.honour h2{
+    font-size: 25px;
+    text-decoration: underline 1.5px;
+    text-underline-offset: 4px;
+}
+
+.honour p{
+    margin: 7px 0px 20px;
+}
+
+.btn{
+    color: white;
+    height:30px;
+    width: 150px;
+    background: transparent;
+    border: 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    background-color: gray;
+}
+
+#back2{
+    background-color: rgb(252, 247, 240);
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+.c2s2{
+    float: left;
+    margin-left: 15vh;
+}
+
+
+.food_video{
+    margin: 5vh 0 0 5vh;
+    float: left;
+    border-radius: 15px;
+    height: 80vh;
+    width: 60vh;
+}
+
+.rating{
+    margin: 5vh 0 0 0;
+    font-family: Lucida Sans Unicode;
+    font-size: 20px;
+    background-color: rgb(192, 184, 154);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.award{
+    margin: 5vh 0 0 0;
+    background-color: rgb(192, 184, 154);
+    border-radius: 10px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+}
+
+
+.award_head{
+    text-align: center;
+    padding: 10px;
+}
+
+.award_all{
+    margin-left: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.branch_head{
+    text-align: center;
+    padding: 10px;
+    margin: 5vh 0 0 0;
+    background-color: rgb(192, 184, 154);
+    border-radius: 10px;
+    padding-top: 8px;
+}
+
+.states{
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+}
+
+.state_card{
+    background-color: white;
+    border-radius: 10px;
+    border-style:groove;
+    box-shadow: 0 2px 0 2px rgb(167, 163, 163);
+}
+
+.mumbai{
+    grid-row: 1;
+    margin: 2vh 0 0 0;
+    padding: 5vh 1.5vh;
+}
+
+.chennai{
+    grid-row: 1;
+    margin: 2vh 0 0 15px;
+    padding: 5vh 1vh;
+}
+
+.bang{
+    grid-row: 1;
+    margin: 2vh 0 0 15px;
+    padding: 5vh 0vh;
+}
+
+.dehli{
+    grid-row: 1;
+    margin: 2vh 0 0 0;
+    padding: 5vh 3vh;
+}
+
+.pune{
+    grid-row: 1;
+    margin: 2vh 0 0 10px;
+    padding: 5vh 4vh;
+}
+
+.goa{
+    grid-row: 1;
+    margin: 2vh 0 0 10px;
+    padding: 5vh 4vh;
+}
+
+.chef_img{
+    width: 50vh;
+    padding: 10px;
+    margin: 8vh 13vh;
+    border-radius: 10vh;
+}
+
+#back3{
+    background-color: rgb(252, 247, 240);
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.menu_head{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.special_dish{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.dishes{
+    display: grid;
+    float: left;
+    grid-row: 10% 10% 10% 10%;
+}
+
+.food_var{
+    grid-row: 1;
+    margin: 5vh 0 0 10vh;
+    background-color: white;
+    height: 30vh;
+    width: 30vh ;
+    display: flex;
+    align-items: center;
+    padding-left: 10vh;
+    border-radius: 10vh;
+    box-shadow: 0 2px 0 2px rgb(167, 163, 163);
+}
+
+.food_var h4{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+
+.trad_food{
+    height: 450px;
+    width: 300px;
+    border-radius: 20px;
+    float: right;
+}
+
+.order{
+    margin: 20vh 0 0 70vh ;
+    padding: 15px;
+    cursor: pointer;
+    border: none;
+    font-family:Tahoma;
+    border-radius: 10px;
+    background-image: linear-gradient(to left,#607D8B,#B0BEC5,#CFD8DC);
+}
+
+#back4{
+    background-color: rgb(252, 247, 240);
+    width: 100%;
+    min-height: 130vh;
+}
+
+.head{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.cards{
+    display: grid;
+    margin-top: 5vh;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.card{
+    width: 60%;
+    background-color: rgb(226, 158, 75);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.service_img{
+    height: 80%;
+    width: 100%;
+}
+
+.hotel{
+    grid-row: 1;
+    margin-left: 20vh;
+}
+
+.marriage{
+    grid-row: 1;
+    margin-left: 13vh;
+}
+
+.delivery{
+    margin-left: 7vh;
+}
+
+.contact_details{
+    background-color: rgb(192, 184, 154);
+    margin: 0 60vh;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.contact{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+}
+
+.contact_info{
+    width: 20px;
+    margin-top: 3vh;
+    margin-left: 20vh;
+}
+
+.last_contact{
+    margin-bottom: 3vh;
+}
+
+.icon{
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+}
+
